@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src='common.js'></script>
+    <script src='../HTMLCSS_V14_Lessons.js'></script>
+    <script> document.write("<title>"+CCourseTitlePrefix+CLesson2Prefix+" "+CLesson2Name+"</title>"); </script>
+</head>
+<body>
+
+<script>
+    InitLesson(HTMLCSS_CourseName,CStartPage_Lesson2,"HTMLCSS_2.html");
+</script>
+
+<div class='SPage SPageHTML SFont13'>
+    <script>ComposeLessonHeader(CLesson2Prefix,CLesson2Name)</script>
+    <script>ComposeHeader('(2.20) Изображения')</script>
+    <script src='HTMLCSS_220.js'></script>
+    <script>ShowFooter()</script>
+</div>
+
+<!-- 2.35 Форматы изображений -->
+<div class='SPage SPageHTML'>
+    <script>ComposeHeader('(2.35) Форматы изображений')</script>
+
+    <h3>Свойства форматов изображений</h3>
+    <table class='SFont13'>
+        <tr>
+            <th>формат</th>
+            <th>кол-во<br>цветов</th>
+            <th>иска-<br>жения</th>
+            <th>прозрачность</th>
+            <th>назначение</th>
+        </tr>
+        <tr>
+            <td>PNG</td>
+            <td class='C'>16 M</td>
+            <td class='C'>нет</td>
+            <td>256 уровней<br>прозрачности</td>
+            <td>полноцветные изображения, потери качества недопустимы;<br>изображения с полупрозрачностью</td>
+        </tr>
+        <tr>
+            <td>GIF</td>
+            <td class='C'>256</td>
+            <td class='C'>нет</td>
+            <td>2&nbsp;уровня&nbsp;прозрачности (т.е. каждая точка или прозрачна, или нет)</td>
+            <td>малоцветные изображения</td>
+        </tr>
+        <tr>
+            <td>JPEG</td>
+            <td class='C'>16 M</td>
+            <td class='C'>да</td>
+            <td>нет</td>
+            <td>естественные полноцветные изображения, потери качества допустимы</td>
+        </tr>
+    </table>
+
+    <h3 style='margin: 10px 0 7px 0'>Примеры изображений в различных форматах</h3>
+    <script src='HTMLCSS_235.js'></script>
+
+    <script>ShowFooter()</script>
+</div>
+
+<div class='SPage SPageHTML' style='overflow: hidden'>
+    <script>ComposeHeader('(2.38) Проблема окантовки изображений')</script>
+    <img src='images/transparent.png' style='margin-top: 10px'>
+    <div class='SFont13' style='margin-top: -5px'>
+        <ol>
+            <li>Круг с &laquo;рваной&raquo; окантовкой, белые углы, прозрачности нет.
+            <li>Используется антиалиасинг &mdash; на окантовке полутоновые пиксели, имеющие промежуточный цвет между цветом круга и цветом углов, прозрачности нет.
+            <li>Если нужно чтобы вместо белых углов проглядывал фон заднего плана, мы можем белые пиксели углов сделать прозрачными, но полутоновые пиксели окантовки будут видны на любом небелом фоне, т.к. являются полутоновыми между белым и зелёным.
+            <li>Мы можем окантовку сделать не из зелёно-белых, а из зелёно-синих пикселей, тогда на синем фоне круг будет выглядеть хорошо, но на белом фоне будет видна сине-зелёная окантовка.
+            <li>Если окантовка сделана не зелёно-белыми, а зелёно-полупрозрачными пикселями, то такой круг будет хорошо выглядеть на фоне любого цвета.
+            <li>Также, такой круг будет выглядеть хорошо на фоне любой сложности.<div style='padding-top: 5px'><i>Полупрозрачность пикселей поддерживается ТОЛЬКО форматом PNG.</div></i>
+        </ol>
+    </div>
+    <script>ShowFooter()</script>
+</div>
+
+<!-- (2.40) Порядок взаимодействия браузера с сервером если на странице используются изображения -->
+<div class='SPage SPageHTML' style='overflow: hidden'>
+    <table><tr><td style='height: 235mm' class='SNoBorders'>
+        <div style='-webkit-transform: rotate(-90deg); white-space: nowrap; width: 50px; height: 100mm; -webkit-transform-origin: left top; position: relative; top: 167mm; line-height: 120%'>
+            <script>ComposeHeader('(2.40) Порядок взаимодействия браузера с сервером,<br />если на странице используются изображения')</script>
+        </div>
+    </td><td class='SNoBorders' style='padding-left: 3mm; text-align: left'>
+        <img src='images/corel/HTMLCSS_240.png' style="width: 234mm; -webkit-transform: rotate(-90deg); -webkit-transform-origin: left top; position: relative; top: 191mm">
+    </td></tr></table>
+    <script>ShowFooter()</script>
+</div>
+
+<div class='SPage SPageHTML' style='overflow: hidden'>
+    <script>ComposeHeader('(2.45) Кэширование загруженных изображений браузером',false,true)</script>
+    <table><tr><td style='height: 235mm' class='SNoBorders'>
+        <div style='-webkit-transform: rotate(-90deg); white-space: nowrap; width: 50px; height: 100mm; -webkit-transform-origin: left top; position: relative; top: 167mm; line-height: 120%'>
+            <script>ComposeHeader('(2.45a) Порядок взаимодействия браузера с сервером,<br />если на странице используются изображения (кэш пустой)',true,false)</script>
+        </div>
+    </td><td class='SNoBorders' style='vertical-align: bottom'>
+        <img src='images/corel/HTMLCSS_245a.png' style="width: 218mm; -webkit-transform: rotate(-90deg); -webkit-transform-origin: left top; position: relative; top: 149mm">
+    </td></tr></table>
+    <script>ShowFooter()</script>
+</div>
+
+<div class='SPage SPageHTML' style='overflow: hidden'>
+    <table><tr><td style='height: 235mm' class='SNoBorders'>
+        <div style='-webkit-transform: rotate(-90deg); white-space: nowrap; width: 50px; height: 100mm; -webkit-transform-origin: left top; position: relative; top: 167mm; line-height: 120%'>
+            <script>ComposeHeader('(2.45b) Порядок взаимодействия браузера с сервером,<br />если на странице используются изображения (прошло 5 минут)',true,false)</script>
+        </div>
+    </td><td class='SNoBorders' style='vertical-align: bottom'>
+        <img src='images/corel/HTMLCSS_245b.png' style="width: 202mm; -webkit-transform: rotate(-90deg); -webkit-transform-origin: left top; position: relative; top: 149mm">
+    </td></tr></table>
+    <script>ShowFooter()</script>
+</div>
+
+<div class='SPage SPageHTML' style='overflow: hidden'>
+    <table><tr><td style='height: 235mm' class='SNoBorders'>
+        <div style='-webkit-transform: rotate(-90deg); white-space: nowrap; width: 50px; height: 100mm; -webkit-transform-origin: left top; position: relative; top: 167mm; line-height: 120%'>
+            <script>ComposeHeader('(2.45с) Порядок взаимодействия браузера с сервером,<br />если на странице используются изображения (прошло 2 часа)',true,false)</script>
+        </div>
+    </td><td class='SNoBorders' style='vertical-align: bottom'>
+        <img src='images/corel/HTMLCSS_245c.png' style="width: 227mm; -webkit-transform: rotate(-90deg); -webkit-transform-origin: left top; position: relative; top: 149mm">
+    </td></tr></table>
+    <script>ShowFooter()</script>
+</div>
+
+<div class='SPage SPageHTML' style='overflow: hidden'>
+    <table><tr><td style='height: 235mm' class='SNoBorders'>
+        <div style='-webkit-transform: rotate(-90deg); white-space: nowrap; width: 50px; height: 100mm; -webkit-transform-origin: left top; position: relative; top: 167mm; line-height: 120%'>
+            <script>ComposeHeader('(2.45d) Порядок взаимодействия браузера с сервером,<br />если на странице используются изображения (прошло 5 часов, файл изменился)',true,false)</script>
+        </div>
+    </td><td class='SNoBorders' style='vertical-align: bottom'>
+        <img src='images/corel/HTMLCSS_245d.png' style="width: 225mm; -webkit-transform: rotate(-90deg); -webkit-transform-origin: left top; position: relative; top: 149mm">
+    </td></tr></table>
+    <script>ShowFooter()</script>
+</div>
+
+<div class='SPage SPageHTML'>
+    <script>ComposeHeader('(2.75) Первые стилевые свойства')</script>
+    <script src='HTMLCSS_275_1.js'></script>
+    <script>ShowFooter()</script>
+</div>
+<div class='SPage SPageHTML'>
+    <script src='HTMLCSS_275_2.js'></script>
+    <script>ShowFooter()</script>
+</div>
+<div class='SPage SPageHTML'>
+    <script src='HTMLCSS_275_3.js'></script>
+    <script>ShowFooter()</script>
+</div>
+
+<div class='SPage SPageHTML'>
+    <script>ComposeHeader('Домашнее задание №2')</script>
+    <p><i>Создать проект CHILDBOOK.<br>Добавить из библиотеки файл childbook.png (его содержимое также приведено ниже); вырезать из него изображения, преобразовать их в оптимальный формат.<br>Сверстать газету с использованием этих изображений.<br>В HTML-комментариях обосновать выбранные форматы изображений.<br>Подумать, почему для файла самого задания (childbook.png) использован формат PNG.</i></p>
+    <hr>
+    <img src='images/shared/childbook.png' style="height: 195mm">
+    <script>ShowFooter()</script>
+</div>
+
+<script>
+    //ComposeContents("CStartPage_Lesson2");
+</script>
+
+</body>
+</html>

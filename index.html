@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src='common.js'></script>
+    <script>
+        var HTMLCSS_CourseName = "Разработка веб-сайтов с использованием HTML,CSS";
+        var CCourseTitlePrefix = 'FrontEnd / HTML/CSS / ';
+        var HTMLCSS_VersionNum = 14;
+
+        var CLesson1Prefix = 'Тема 1.';
+        var CLesson1Name = 'Введение в HTML. Ссылки';
+        var CLesson2Prefix = 'Тема 2.';
+        var CLesson2Name = 'Изображения. Введение в CSS';
+        var CLesson3Prefix = 'Тема 3.';
+        var CLesson3Name = 'Цвет. Шрифт. Границы. Размеры';
+        var CLesson4Prefix = 'Тема 4.';
+        var CLesson4Name = 'Отступы. Фон. Таблицы';
+        var CLesson5Prefix = 'Тема 5.';
+        var CLesson5Name = 'Обтекание. Вёрстка макетов. Селекторы';
+        var CLesson6Prefix = 'Тема 6.';
+        var CLesson6Name = 'Иерархические селекторы. Каскадирование';
+        var CLesson7Prefix = 'Тема 7.';
+        var CLesson7Name = 'Медиазапросы. Адаптивная вёрстка';
+        var CLesson8Prefix = 'Тема 8.';
+        var CLesson8Name = 'Формы. Позиционирование. HTML5. Мультимедиа';
+        var CLesson9Prefix = 'Тема 9.';
+        var CLesson9Name = 'CSS3. Анимация. Flex. Grid layout';
+
+        var CPages_Contents = 2;
+        var CPages_Lesson1 = 10 + 2 + 1 - 1;
+        var CPages_Lesson2 = 9 + 2 - 2 + 3 - 1 + 2 + 1 - 2;
+        var CPages_Lesson3 = 13 - 3 + 6 - 1 - 2 + 1 + 3 + 3 + 2 - 4 + 1 - 3 - 1;
+        var CPages_Lesson4 = 22 - 6 + 8 - 3 + 7 - 3 + 4 - 1 + 3 - 8 + 2;
+        var CPages_Lesson5 = 24 + 4 - 8 + 2 - 7 + 4 + 8 - 2 - 1;
+        var CPages_Lesson6 = 21 - 4 + 3 + 2 + 1 - 1 - 3 + 1 + 1;
+        var CPages_Lesson7 = 9 - 2 + 1 - 3 + 10 + 1 - 1 - 5 - 1 + 2 + 3 - 8;
+        var CPages_Lesson8 = 16 + 8 - 10 - 1 + 2 + 5 + 1 + 2 - 4 - 1 + 13 - 2 - 1 + 8 + 1 - 14 - 1;
+        var CPages_Lesson9 = 8 + 5 + 3 - 8 - 1 - 2 + 4 + 1 - 1 + 1 + 1 + 14 + 1 + 9;
+
+        var CStartPage_Contents = 1;
+        var CStartPage_Lesson1 = CStartPage_Contents + CPages_Contents;
+        var CStartPage_Lesson2 = CStartPage_Lesson1 + CPages_Lesson1;
+        var CStartPage_Lesson3 = CStartPage_Lesson2 + CPages_Lesson2;
+        var CStartPage_Lesson4 = CStartPage_Lesson3 + CPages_Lesson3;
+        var CStartPage_Lesson5 = CStartPage_Lesson4 + CPages_Lesson4;
+        var CStartPage_Lesson6 = CStartPage_Lesson5 + CPages_Lesson5;
+        var CStartPage_Lesson7 = CStartPage_Lesson6 + CPages_Lesson6;
+        var CStartPage_Lesson8 = CStartPage_Lesson7 + CPages_Lesson7;
+        var CStartPage_Lesson9 = CStartPage_Lesson8 + CPages_Lesson8;
+        var CStartPage_Appendix = CStartPage_Lesson9 + CPages_Lesson9;
+
+    </script>
+    <script> document.write("<title>" + CCourseTitlePrefix + "Оглавление</title>"); </script>
+</head>
+<body>
+
+<script>
+
+    InitLesson(HTMLCSS_CourseName, CStartPage_Contents);
+
+    var Contents1A = [
+
+        [CStartPage_Lesson1 + 0, 1, CLesson1Prefix + " " + CLesson1Name, "HTMLCSS_1.html", "ANCHOR1"],
+        [CStartPage_Lesson1 + 0, 2, "(1.10) Порядок взаимодействия браузера с сервером", "HTMLCSS_1.html", "ANCHOR2"],
+        [CStartPage_Lesson1 + 1, 2, "(1.45) Первые теги HTML", "HTMLCSS_1.html", "ANCHOR3"],
+        [CStartPage_Lesson1 + 4, 2, "(1.55) Первые атрибуты тегов HTML", "HTMLCSS_1.html", "ANCHOR4"],
+        [CStartPage_Lesson1 + 5, 2, "(1.75) Специальные символы HTML", "HTMLCSS_1.html", "ANCHOR5"],
+        [CStartPage_Lesson1 + 9, 2, "(1.80) Cтруктура URI", "HTMLCSS_1.html", "ANCHOR6"],
+        [CStartPage_Lesson1 + 10, 2, "(1.90) Гиперссылки", "HTMLCSS_1.html", "ANCHOR7"],
+        [CStartPage_Lesson1 + 11, 2, "Домашнее задание №1a", "HTMLCSS_1.html", "ANCHOR8"],
+        [CStartPage_Lesson1 + 11, 2, "Домашнее задание №1b", "HTMLCSS_1.html", "ANCHOR9"],
+
+        [CStartPage_Lesson2 + 0, 1, CLesson2Prefix + " " + CLesson2Name, "HTMLCSS_2.html", "ANCHOR1"],
+        [CStartPage_Lesson2 + 0, 2, "(2.20) Изображения", "HTMLCSS_2.html", "ANCHOR2"],
+        [CStartPage_Lesson2 + 1, 2, "(2.35) Форматы изображений", "HTMLCSS_2.html", "ANCHOR3"],
+        [CStartPage_Lesson2 + 2, 2, "(2.38) Проблема окантовки изображений", "HTMLCSS_2.html", "ANCHOR4"],
+        [CStartPage_Lesson2 + 3, 2, "(2.40) Порядок взаимодействия браузера с сервером,<br>если на странице используются изображения", "HTMLCSS_2.html", "ANCHOR5"],
+        [CStartPage_Lesson2 + 4, 2, "(2.45) Кэширование загруженных изображений браузером", "HTMLCSS_2.html", "ANCHOR6"],
+        [CStartPage_Lesson2 + 8, 2, "(2.75) Первые стилевые свойства", "HTMLCSS_2.html", "ANCHOR7"],
+        [CStartPage_Lesson2 + 11, 2, "Домашнее задание №2", "HTMLCSS_2.html", "ANCHOR8"],
+
+        [CStartPage_Lesson3 + 0, 1, CLesson3Prefix + " " + CLesson3Name, "HTMLCSS_3.html", "ANCHOR1"],
+        [CStartPage_Lesson3 + 0, 2, "(3.20) Стилевое свойство для указания цвета текста", "HTMLCSS_3.html", "ANCHOR2"],
+        [CStartPage_Lesson3 + 0, 2, "(3.25) Цветовой охват", "HTMLCSS_3.html", "ANCHOR3"],
+        [CStartPage_Lesson3 + 1, 2, "(3.30) Именованные цвета", "HTMLCSS_3.html", "ANCHOR4"],
+        [CStartPage_Lesson3 + 2, 2, "(3.35) Единицы измерения", "HTMLCSS_3.html", "ANCHOR5"],
+        [CStartPage_Lesson3 + 3, 2, "(3.45) Стилевые свойства для управления шрифтом", "HTMLCSS_3.html", "ANCHOR6"],
+        [CStartPage_Lesson3 + 6, 2, "(3.50) Имя шрифта", "HTMLCSS_3.html", "ANCHOR7"],
+        [CStartPage_Lesson3 + 7, 2, "(3.52) Все реквизиты шрифта сразу", "HTMLCSS_3.html", "ANCHOR8"],
+        [CStartPage_Lesson3 + 7, 2, "(3.55) Внешние шрифты", "HTMLCSS_3.html", "ANCHOR9"],
+        [CStartPage_Lesson3 + 8, 2, "(3.57) Порядок взаимодействия браузера с сервером,<br>если на странице используются изображения и шрифтовой файл", "HTMLCSS_3.html", "ANCHOR10"],
+        [CStartPage_Lesson3 + 9, 2, "(3.70) Стилевые свойства для указания вида рамки", "HTMLCSS_3.html", "ANCHOR11"],
+        [CStartPage_Lesson3 + 13, 2, "(3.75) Управление размерами", "HTMLCSS_3.html", "ANCHOR12"],
+        [CStartPage_Lesson3 + 14, 2, "Домашнее задание №3", "HTMLCSS_3.html", "ANCHOR13"],
+
+        [CStartPage_Lesson4 + 0, 1, CLesson4Prefix + " " + CLesson4Name, "HTMLCSS_4.html", "ANCHOR1"],
+        [CStartPage_Lesson4 + 0, 2, "(4.10) Поля и отступы", "HTMLCSS_4.html", "ANCHOR2"],
+        [CStartPage_Lesson4 + 3, 2, "(4.20) Выравнивание содержимого контейнера", "HTMLCSS_4.html", "ANCHOR3"],
+        [CStartPage_Lesson4 + 5, 2, "(4.25) Управление пробелами и переносами строк", "HTMLCSS_4.html", "ANCHOR4"],
+        [CStartPage_Lesson4 + 6, 2, "(4.30) Стилевые свойства для управления фоном", "HTMLCSS_4.html", "ANCHOR5"],
+        [CStartPage_Lesson4 + 12, 2, "(4.32) Резиновый фон", "HTMLCSS_4.html", "ANCHOR6"],
+        [CStartPage_Lesson4 + 13, 2, "(4.35) Переполнение контейнера", "HTMLCSS_4.html", "ANCHOR7"],
+        [CStartPage_Lesson4 + 14, 2, "(4.40) Спрайты", "HTMLCSS_4.html", "ANCHOR8"],
+        [CStartPage_Lesson4 + 15, 2, "(4.70) Таблицы — основные теги и атрибуты тегов", "HTMLCSS_4.html", "ANCHOR9"],
+        [CStartPage_Lesson4 + 17, 2, "(4.72) Таблицы — дополнительные теги и атрибуты тегов", "HTMLCSS_4.html", "ANCHOR10"],
+        [CStartPage_Lesson4 + 19, 2, "(4.75) Управление слиянием рамок таблицы", "HTMLCSS_4.html", "ANCHOR11"],
+        [CStartPage_Lesson4 + 20, 2, "(4.78) Ширина и высота таблицы и ячеек, строк, столбцов таблицы", "HTMLCSS_4.html", "ANCHOR12"],
+        [CStartPage_Lesson4 + 21, 2, "(4.80) Объединение ячеек таблицы", "HTMLCSS_4.html", "ANCHOR13"],
+        [CStartPage_Lesson4 + 22, 2, "Домашнее задание №4", "HTMLCSS_4.html", "ANCHOR14"],
+    ];
+
+    var Contents2A = [
+
+        [CStartPage_Lesson5 + 0, 1, CLesson5Prefix + " " + CLesson5Name, "HTMLCSS_5.html", "ANCHOR1"],
+        [CStartPage_Lesson5 + 0, 2, "(5.10) Обтекание", "HTMLCSS_5.html", "ANCHOR2"],
+        [CStartPage_Lesson5 + 8, 2, "(5.30) Табличная и блочная вёрстка", "HTMLCSS_5.html", "ANCHOR3"],
+        [CStartPage_Lesson5 + 10, 2, "(5.40) Столбцы одинаковой высоты в блочной вёрстке", "HTMLCSS_5.html", "ANCHOR4"],
+        [CStartPage_Lesson5 + 20, 2, "(5.50) Выравнивание блочного содержимого", "HTMLCSS_5.html", "ANCHOR5"],
+        [CStartPage_Lesson5 + 22, 2, "(5.70) Селектор элементов по классу", "HTMLCSS_5.html", "ANCHOR6"],
+        [CStartPage_Lesson5 + 23, 2, "(5.75) Селектор элемента по идентификатору", "HTMLCSS_5.html", "ANCHOR7"],
+        [CStartPage_Lesson5 + 23, 2, "Домашнее задание №5", "HTMLCSS_5.html", "ANCHOR8"],
+
+        [CStartPage_Lesson6 + 0, 1, CLesson6Prefix + " " + CLesson6Name, "HTMLCSS_6.html", "ANCHOR1"],
+        [CStartPage_Lesson6 + 0, 2, "(6.20) Селектор элементов по тегу", "HTMLCSS_6.html", "ANCHOR2"],
+        [CStartPage_Lesson6 + 0, 2, "(6.30) Универсальный селектор", "HTMLCSS_6.html", "ANCHOR3"],
+        [CStartPage_Lesson6 + 0, 2, "(6.35) Селектор элементов по атрибутам", "HTMLCSS_6.html", "ANCHOR4"],
+        [CStartPage_Lesson6 + 2, 2, "(6.40) Селектор элементов по нескольким критериям сразу", "HTMLCSS_6.html", "ANCHOR5"],
+        [CStartPage_Lesson6 + 2, 2, "(6.45) Иерархические селекторы", "HTMLCSS_6.html", "ANCHOR6"],
+        [CStartPage_Lesson6 + 4, 2, "(6.50) Селекторы псевдоклассов", "HTMLCSS_6.html", "ANCHOR7"],
+        [CStartPage_Lesson6 + 9, 2, "(6.52) Селектор элементов по нескольким критериям сразу<br>с использованием псевдоклассов", "HTMLCSS_6.html", "ANCHOR8"],
+        [CStartPage_Lesson6 + 9, 2, "(6.55) Селекторы псевдоэлементов", "HTMLCSS_6.html", "ANCHOR9"],
+        [CStartPage_Lesson6 + 11, 2, "(6.57) clearfix", "HTMLCSS_6.html", "ANCHOR10"],
+        [CStartPage_Lesson6 + 12, 2, "(6.60) Комбинированные селекторы", "HTMLCSS_6.html", "ANCHOR11"],
+        [CStartPage_Lesson6 + 13, 2, "(6.70) Веса стилевых селекторов", "HTMLCSS_6.html", "ANCHOR12"],
+        [CStartPage_Lesson6 + 15, 2, "(6.80) Управление режимом отображения элементов", "HTMLCSS_6.html", "ANCHOR13"],
+        [CStartPage_Lesson6 + 17, 2, "(6.85) Управление видимостью элементов", "HTMLCSS_6.html", "ANCHOR14"],
+        [CStartPage_Lesson6 + 19, 2, "Домашние задания №6a,6b,6c,6d", "HTMLCSS_6.html", "ANCHOR15"],
+
+        [CStartPage_Lesson7 + 0, 1, CLesson7Prefix + " " + CLesson7Name, "HTMLCSS_7.html", "ANCHOR1"],
+        [CStartPage_Lesson7 + 0, 2, "(7.20) Стилевая директива @media", "HTMLCSS_7.html", "ANCHOR2"],
+        [CStartPage_Lesson7 + 1, 2, "(7.25) Медиазапросы", "HTMLCSS_7.html", "ANCHOR3"],
+        [CStartPage_Lesson7 + 3, 2, "(7.90) Стилевые таблицы в отдельных файлах", "HTMLCSS_7.html", "ANCHOR4"],
+        [CStartPage_Lesson7 + 4, 2, "(7.92) Порядок взаимодействия браузера с сервером,<br>если на странице используются изображения и стилевой файл", "HTMLCSS_7.html", "ANCHOR5"],
+        [CStartPage_Lesson7 + 5, 2, "Домашнее задание №7", "HTMLCSS_7.html", "ANCHOR6"],
+
+        [CStartPage_Lesson8 + 0, 1, CLesson8Prefix + " " + CLesson8Name, "HTMLCSS_8.html", "ANCHOR1"],
+        [CStartPage_Lesson8 + 0, 2, "(8.10) Порядок взаимодействия браузера с сервером при отправке формы", "HTMLCSS_8.html", "ANCHOR2"],
+        [CStartPage_Lesson8 + 1, 2, "(8.15) Формы", "HTMLCSS_8.html", "ANCHOR3"],
+        [CStartPage_Lesson8 + 8, 2, "(8.20) Позиционирование элементов", "HTMLCSS_8.html", "ANCHOR4"],
+        [CStartPage_Lesson8 + 10, 2, "(8.35) Порядок наложения позиционированных элементов", "HTMLCSS_8.html", "ANCHOR5"],
+        [CStartPage_Lesson8 + 11, 2, "(8.40) HTML5 — обзор", "HTMLCSS_8.html", "ANCHOR6"],
+        [CStartPage_Lesson8 + 12, 2, "(8.42) HTML5 — семантическая вёрстка", "HTMLCSS_8.html", "ANCHOR7"],
+        [CStartPage_Lesson8 + 16, 2, "(8.45) HTML5 — формы", "HTMLCSS_8.html", "ANCHOR8"],
+        [CStartPage_Lesson8 + 19, 2, "Домашнее задание №8a", "HTMLCSS_8.html", "ANCHOR9"],
+        [CStartPage_Lesson8 + 20, 2, "Домашнее задание №8b", "HTMLCSS_8.html", "ANCHOR10"],
+        [CStartPage_Lesson8 + 21, 2, "Домашнее задание №8c", "HTMLCSS_8.html", "ANCHOR11"],
+
+        [CStartPage_Lesson9 + 0, 1, CLesson9Prefix + " " + CLesson9Name, "HTMLCSS_9.html", "ANCHOR1"],
+        [CStartPage_Lesson9 + 0, 2, "(9.15) SVG — пример", "HTMLCSS_9.html", "ANCHOR2"],
+        [CStartPage_Lesson9 + 1, 2, "(9.25) SVG — краткое описание", "HTMLCSS_9.html", "ANCHOR3"],
+        [CStartPage_Lesson9 + 14, 2, "(9.55) Модель flex-блоков", "HTMLCSS_9.html", "ANCHOR4"],
+        [CStartPage_Lesson9 + 18, 2, "(9.57) Grid-раскладка", "HTMLCSS_9.html", "ANCHOR5"],
+        [CStartPage_Lesson9 + 27, 2, "(9.65) Метаязыки описания стилей (Sass/SCSS)", "HTMLCSS_9.html", "ANCHOR6"],
+        [CStartPage_Lesson9 + 32, 2, "(9.70) Тренды и популярные фреймворки для создания качественной и адаптивной верстки", "HTMLCSS_9.html", "ANCHOR7"],
+        [CStartPage_Lesson9 + 35, 2, "Домашние задания №9a,9b,9c,9d,9e,9f", "HTMLCSS_9.html", "ANCHOR8"],
+        [CStartPage_Appendix + 0, 1, "Приложения ", "HTMLCSS_Z.html", "ANCHOR1"],
+
+    ];
+
+</script>
+
+<div class='SPage SPageHTML'>
+    <h1 style='margin-top: 2px; margin-bottom: 5px'>ОГЛАВЛЕНИЕ</h1>
+    <script>ComposeContentsPage(Contents1A)</script>
+    <script>ShowFooter()</script>
+</div>
+
+<div class='SPage SPageHTML'>
+    <script>ComposeContentsPage(Contents2A)</script>
+    <script>ShowFooter()</script>
+</div>
+
+</body>
+</html>
